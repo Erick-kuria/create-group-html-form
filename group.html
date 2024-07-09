@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Group</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+        <form id="create-group-form">
+            <div class="form-container">
+            <h2><b>Create a New Group</b></h2>
+            <div class="form-group">
+                <label for="group-name">Group Name:</label>
+                <input type="text" id="group-name" name="group-name" required>
+            </div>
+            <div class="form-group">
+                <label for="group-description"> Add The Group Description:</label>
+                <textarea id="group-description" name="group-description" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="group-profile-picture">Group Profile Picture:</label>
+                <input type="file" id="group-profile-picture" name="group-profile-picture" accept="image/*" required>
+            </div>
+            <div class="form-group">
+                <label for="group-banner">Group Banner:</label>
+                <input type="file" id="group-banner" name="group-banner" accept="image/*" required>
+            </div>
+            <div class="form-group">
+                <label for="group-topics">Group Topics:</label>
+                <input type="checkbox" name="topics" value="Family planning">Family planning<br>
+                <input type="checkbox" name="topics" value="Early pregnancy">Early pregnancy<br>
+                <input type="checkbox" name="topics" value="Nutrition and Diet">Nutrition and Diet<br>
+                <input type="checkbox" name="topics" value="Exercise and Fitness">Exercise and Fitness<br>
+                <input type="checkbox" name="topics" value="Mental Health and Well-being">Mental Health and Well-being<br>
+                <input type="checkbox" name="topics" value="Labor Preparation">Labor Preparation<br>
+                <input type="checkbox" name="topics" value="Postpartum Care">Postpartum Care<br>
+                <input type="checkbox" name="topics" value="Breastfeeding and Infant Nutrition">Breastfeeding and Infant Nutrition<br>
+                <input type="checkbox" name="topics" value="Pregnancy Complications">Pregnancy Complications<br>
+                <input type="checkbox" name="topics" value="Parenting Tips">Parenting Tips<br>
+                <input type="checkbox" name="topics" value="Baby Care">Baby Care<br>
+                <input type="checkbox" name="topics" value="Working Moms">Working Moms<br>
+                <input type="checkbox" name="topics" value="Pregnancy Fashion and Comfort">Pregnancy Fashion and Comfort<br>
+                <input type="checkbox" name="topics" value="Multiple Pregnancies">Multiple Pregnancies<br>
+                <input type="checkbox" name="topics" value="Natural and Alternative Therapies">Natural and Alternative Therapies<br>
+                <input type="checkbox" name="topics" value="Pregnancy After Loss">Pregnancy After Loss<br>
+            </div>
+            <div class="form-group">
+                <label for="group-members">Add Group Members:</label>
+                <input type="text" id="group-members" name="group-members" placeholder="Enter member name" required>
+                <button type="button" id="add-member">Add Member</button>
+                <ul id="members-list"></ul>
+                <button type="reset">Clear</button>
+               
+            </div>
+            <input type="button" onclick="print">"Group created succesfully"
+            <button type="submit">Create Group</button>
+            
+        </form>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
